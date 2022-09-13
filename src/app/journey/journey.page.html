@@ -1,0 +1,52 @@
+<ion-header>
+  <app-navbar></app-navbar>
+</ion-header>
+
+<ion-content>
+<div class="container-fluid">
+  <div class="row mb-0 mt-4">
+    <div class="col-md-8 mx- box">
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  
+      <!-- <label for="cno">Contact Number</label>
+      <input type="number" id="number" name="number" placeholder="Your Contact no.."> -->
+  
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  
+      <label for="fname">Contact Number</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your contact no..">
+  
+      <label for="fname">Contact Number</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your contact no..">
+  
+      <label for="fname">Members Count</label>
+      <input type="text" id="fname" name="firstname" placeholder="Members count..">
+      <label for="country">Destination</label>
+      <select id="country" name="country">
+        <option value="australia">New Zealand</option>
+        <option value="canada">Brazil</option>
+        <option value="usa">Agra</option>
+        <option value="usa">Dubai</option>
+        <option value="usa">Paris</option>
+        <option value="usa">Maldives</option>
+        <option value="usa">Thailand</option>
+        <option value="usa">Manali</option>
+      </select>
+    
+      <input type="submit" value="Submit">
+    </div>
+    <div class="col-md-4">
+      <ion-slides class="slide-padding active" pager="true" [options]="slideOpts">
+        <ion-slide *ngFor="let story of topStories">
+        
+            <ion-img src="{{story.picture}}" routerLink="{{story.link}}" style="height: 670px;width: 120%;"></ion-img>
+            <ion-slides pager="true" [options]="slideOptsreverse"></ion-slides>
+          </ion-slide>
+        </ion-slides>
+    </div>
+  </div>
+  
+</div>
+</ion-content>

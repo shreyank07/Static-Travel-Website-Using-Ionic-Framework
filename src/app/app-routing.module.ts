@@ -11,6 +11,26 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'places',
+    loadChildren: () => import('./places/places.module').then( m => m.PlacesPageModule)
+  },
+  {
+    path: 'reviews',
+    loadChildren: () => import('./reviews/reviews.module').then( m => m.ReviewsPageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'signup',
+    loadChildren: () => import('./signup/signup.module').then( m => m.SignupPageModule)
+  },
+  {
+    path: 'journey',
+    loadChildren: () => import('./journey/journey.module').then( m => m.JourneyPageModule)
+  },
 ];
 
 @NgModule({

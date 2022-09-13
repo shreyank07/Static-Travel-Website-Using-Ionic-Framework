@@ -25,3 +25,153 @@
 #container a {
   text-decoration: none;
 }
+.hero-image {
+ 
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+.imgContainer:hover .overlay{
+  opacity: 1;
+  height: 200px;
+}
+.imgContainer{
+  position: relative;
+  height: 300px;
+}
+.text {
+  color: rgb(20, 1, 1);
+  font-size: 80px;
+  font-family: "Brush Script MT", cursive;
+  position: absolute;
+  top : 75%;
+  left : 30%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: left;
+  
+  }
+  .overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background:transparent;
+    
+}
+.imgContainer .btn {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  color: black;
+  font-size: 16px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.imgContainer .btn:hover {
+  background-color: black;
+  color: white;
+}
+.btn-group .button {
+  background-color: #8f8d7d; /* Green */
+  border: 1px solid rgb(178, 190, 178);
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  width: 150px;
+  display: block;
+}
+
+.btn-group .button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+.btn-group .button:hover {
+  background-color: #070707;
+}
+.imgContainer .btn2 {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #d39d9d;
+  color: black;
+  font-size: 16px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.imgContainer .btn2:hover {
+  background-color: rgb(197, 135, 135);
+  color: white;
+}
+.btn2-group .button2 {
+  background-color: #8a081d; /* Green */
+  border: 1px solid rgb(178, 190, 178);
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  width: 300px;
+  display: block;
+}
+
+.btn2-group .button2:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+.btn2-group .button2:hover {
+  background-color: #f3b3b3;
+}
